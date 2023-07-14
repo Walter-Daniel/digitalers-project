@@ -194,9 +194,12 @@ hr {
 }
 .category-container figure{
     height: 40rem;
+    width: 30rem;
 }
 .category-container figure img {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 figcaption {
     text-align: center;
