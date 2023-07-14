@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+/**************************************************** 
+                       GLOBALES
+****************************************************/
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f8f8;
@@ -7,6 +9,11 @@ body {
 
 body, html {
     height: 100%;
+}
+h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 1rem;
 }
 /**************************************************** 
                        NAVBAR
@@ -136,4 +143,62 @@ nav a.active, nav a:hover {
     .hero-text span{
         font-size: 32px;
     }
+}
+
+/**************************************************** 
+                       BOX
+****************************************************/
+.container-box {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+@media ( width <= 860px ) {
+    .container-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.box {
+    background-color: black;
+    color: #f8f8f8;
+    padding: 1rem;
+    width: 20%;
+    margin: 1rem;
+}
+@media ( width <= 860px ) {
+    .box {
+        background-color: black;
+        color: #f8f8f8;
+        padding: 1rem;
+        width: 85%;
+        margin: 1rem;
+    }
+}
+
+/**************************************************** 
+                       MAIN
+****************************************************/
+main{
+    margin: 0 2rem;
+}
+hr {
+    margin: 0 5rem;
+}
+.category-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.category-container figure{
+    height: 40rem;
+}
+.category-container figure img {
+    height: 100%;
+}
+figcaption {
+    text-align: center;
+    padding-top: 0.5rem;
 }
