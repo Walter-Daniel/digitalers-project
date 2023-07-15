@@ -64,12 +64,17 @@ nav a.active, nav a:hover {
 ****************************************************/
 .btn-primary {
     background-color: #FF0909;
+    color: #f8f8f8;
     padding: 1rem;
     border-radius: 15px;
     font-weight: bold;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
     background-color: #9d0505;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.5s;
 }
 
 /**************************************************** 
@@ -301,4 +306,51 @@ footer p {
 }
 .footer-information li {
     list-style: none;
+}
+/**************************************************** 
+                       LOGIN
+****************************************************/
+.container-primary {
+    background-color: black;
+    color: #f8f8f8;
+    /* border: 1px solid #f8f8f8; */
+    height: 100%;
+    width: 100%;
+}
+.form-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.7rem;
+}
+.container-input label {
+    padding-bottom: 0.5rem;
+}
+.container-input input {
+    height: 2rem;
+    border-radius: 15px;
+}
+.form-container p {
+    padding: 0.3rem 0;
+}
+.form-container button {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+.form-container a {
+    color: #f8f8f8;
+}
+fieldset {
+    border: 1px solid #f8f8f8;
+    border-radius: 15px;
+    padding: 2rem;
+}
+legend {
+    font-size: 1.6rem;
+    padding: 0 0.3rem;
 }
