@@ -355,3 +355,66 @@ legend {
     font-size: 1.6rem;
     padding: 0 0.3rem;
 }
+/**************************************************** 
+                       BLOG
+****************************************************/
+.title {
+    margin: 2rem;
+    text-align: center;
+}
+.container-secondary {
+    display: flex;
+}
+aside {
+    width: 40vw;
+    height: 100%;
+    border: 1px solid black;
+    padding: 1.5rem;
+}
+aside form {
+    display: flex;
+    flex-direction: column;
+}
+aside form input {
+    height: 2rem;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+aside section h2 {
+    font-size: 1.8rem;
+    text-align: start;
+}
+.note {
+    border: 1px solid black;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-items: stretch;
+}
+.note button {
+    justify-self: end;
+}
+.entries li{
+    list-style: none;
+    padding: 1rem;
+}
+.entries li:hover,
+.entries li:focus {
+    cursor: pointer;
+    background-color: #FF0909;
+    border-radius: 15px;
+}
+.entries img {
+    height: 1rem;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    padding: 0.3rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+.entries a {
+    text-decoration: none;
+    color: black;
+}
