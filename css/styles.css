@@ -365,11 +365,22 @@ legend {
 .container-secondary {
     display: flex;
 }
+@media (width <= 860px) {
+    .container-secondary{
+        flex-direction: column;
+    }
+}
 aside {
     width: 40vw;
     height: 100%;
     border: 1px solid black;
     padding: 1.5rem;
+    margin: 0 2rem;
+}
+@media (width <= 860px){
+    aside {
+        width: calc(100% - 7rem);
+    }
 }
 aside form {
     display: flex;
@@ -393,8 +404,17 @@ aside section h2 {
     text-align: start;
     justify-items: stretch;
 }
-.note button {
-    justify-self: end;
+.note h2 {
+    font-size: 2rem;
+    text-align: start;
+}
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0.5rem 3rem;
+    margin-top: 0.5rem;
 }
 .entries li{
     list-style: none;
