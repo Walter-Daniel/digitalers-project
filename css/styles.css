@@ -458,9 +458,40 @@ aside section h2 {
 /**************************************************** 
                        ABOUT
 ****************************************************/
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+.about-section1 {
+    width: 50%;
+}
 .social-about {
     display: flex;
 }
 .social-about img {
     height: 2rem;
+    width: 2rem; 
+    border-radius: 50%;
+    border: 1px solid #FF0909;
+    padding: 5px;
+}
+.social-about img:hover {
+
+    background-color: #FF0909;
+    border-radius: 50%;
+    padding: 5px;
+}
+.social-about a {
+    text-decoration: none;
+    color: black;
+}
+.contact-container {
+    background-color: black;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #f8f8f8;
+}
+.contact-container form {
+    margin-bottom: 1.2rem;
 }
