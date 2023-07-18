@@ -455,3 +455,12 @@ aside section h2 {
     text-decoration: none;
     color: black;
 }
+/**************************************************** 
+                       ABOUT
+****************************************************/
+.social-about {
+    display: flex;
+}
+.social-about img {
+    height: 2rem;
+}
