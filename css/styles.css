@@ -17,8 +17,8 @@ body, html {
 }
 h2 {
     font-size: 3.5rem;
-    text-align: center;
     margin: 1rem;
+    position: relative;
 }
 @media (width <= 680px ) {
     h2{
@@ -129,9 +129,6 @@ nav a.active, nav a:hover {
     }
 }
 @media (width <= 768px) {
-    .hero-image {
-        background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/front-view-hands-holding-camera.jpg');
-    }
     .hero-text {
         text-align: start;
         position: absolute;
@@ -143,9 +140,6 @@ nav a.active, nav a:hover {
     }
 }
 @media (width <= 480px) {
-    .hero-image {
-        background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/front-view-hands-holding-camera.jpg');
-    }
     .hero-text {
         text-align: start;
         position: absolute;
@@ -191,31 +185,47 @@ main{
     margin: 0 2rem;
 }
 hr {
-    margin: 0 5rem;
+    margin: 0 2rem;
     background-color: rgb(49, 48, 48);
     height: 0.5px;
+    opacity: 0.5;
+}
+.categories-container {
+    margin-top: 1rem;
 }
 .category-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 16px;
-    padding-bottom: 2rem;
+    gap: 20px;
+    padding: 2rem;
 }
+/* Cards */
 .category-container figure{
-    height: 40rem;
+    height: 28rem;
     width: 100%;
     margin-bottom: 2rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
 }
 @media (width <= 992px){
     .category-container figure{
-        height: 30rem;
+        height: 28rem;
         width: 100%;
     }
 }
+.category-container figure:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.1);
+}
 .category-container figure img {
-    height: 100%;
+    height: 25rem;
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 figcaption {
     text-align: center;
@@ -225,6 +235,8 @@ figcaption {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
+    /* border: 1px solid black; */
+    margin-bottom: 2rem;
 }
 .card-container {
     border-radius: 1px solid black;
@@ -232,7 +244,13 @@ figcaption {
     padding: 2rem;
     background-color: #9d0505;
     color: #f8f8f8;
-    
+    transition: all 0.2s ease-in-out;   
+}
+.card-container:hover {
+    transform: scale(1.01);
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.1);
 }
 /**************************************************** 
                        FOOTER
@@ -262,7 +280,6 @@ footer p {
     padding: 0.3rem;
     background-color: #f8f8f8;
     border-radius: 50%;
-    margin: 0.5rem;
 }
 .social-media img:hover {
     transition: 0.5s;
@@ -274,10 +291,10 @@ footer p {
     border: 1px solid rgb(61, 61, 61);
     padding: 0.5rem;
     margin: 1rem;
+    transition: all 0.3s ease-in-out;   
 }
 .social-media li:hover {
     background-color: rgb(36, 36, 36);
-    transition: 0.5s;
     transform: scale(1.05);
 }
 .social-media a {
